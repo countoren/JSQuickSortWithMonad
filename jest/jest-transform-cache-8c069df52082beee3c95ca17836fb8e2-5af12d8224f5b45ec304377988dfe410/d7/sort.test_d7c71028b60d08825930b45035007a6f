@@ -1,0 +1,6 @@
+const sort = require('./sort');
+
+debugger;
+test('quicksort should arrange simple array', () => {
+  expect(sort([3, 2, 1]).get()).toEqual([1, 2, 3]);
+});

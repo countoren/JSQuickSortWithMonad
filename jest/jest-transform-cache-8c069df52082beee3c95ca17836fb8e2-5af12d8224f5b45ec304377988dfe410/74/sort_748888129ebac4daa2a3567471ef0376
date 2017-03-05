@@ -1,0 +1,29 @@
+var Either = require('data.either');
+
+function sort(a, b) {
+    debugger;
+}
+
+
+function quicksort(arr) {
+    var pivot,
+    pi = Math.floor(Math.random() * arr.length), // Random pivot index
+    below = [],
+    above = [],
+    i,l;
+
+    if (arr.length < 2) return arr;
+
+    pivot = arr.splice(pi, 1).pop();
+
+    for (i = 0, l = arr.length; i < l; i++) {
+        if (arr[i] < pivot) {
+            below.push(arr[i]);
+        } else {
+            above.push(arr[i]);
+        }
+    }
+
+    return [].concat(quicksort(below), pivot, quicksort(above));
+}
+module.exports = sort;

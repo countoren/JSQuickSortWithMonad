@@ -1,0 +1,24 @@
+{
+  "name": "sort-with-monads",
+  "version": "1.0.0",
+  "description": "contains sorting algortym that handles error with either monad and is unit tested.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+		"test-debug": "node --debug-brk ./node_modules/.bin/jest --runInBand"
+  },
+  "keywords": [
+    "sorting",
+    "either",
+    "monad",
+    "testing"
+  ],
+  "author": "Oren Rozen",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "data.either": "^1.5.0"
+  }
+}

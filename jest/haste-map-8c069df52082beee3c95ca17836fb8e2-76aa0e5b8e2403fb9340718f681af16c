@@ -1,0 +1,1 @@
+{"clocks":{},"files":{"/app/package.json":["sort-with-monads",1488667420000,1,[]],"/app/sort.js":["",1488740127000,1,["data.either"]],"/app/sort.test.js":["",1488740363000,1,["./sort"]],"/app/main.js":["",1488737004000,1,[]]},"map":{"sort-with-monads":{"g":["/app/package.json",1]}},"mocks":{}}

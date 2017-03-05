@@ -1,0 +1,39 @@
+var Either = require('data.either');
+
+function checkArray(arr) {
+}
+
+function checkElm(elm) {
+    debugger;
+}
+
+function quicksort(arr) {
+    var pivot,
+    pi = Math.floor(Math.random() * arr.length), // Random pivot index
+    below = [],
+    above = [],
+    i,l;
+
+    if (arr.length < 2) return Either.Right(arr);
+
+    pivot = arr.splice(pi, 1).pop();
+
+    for (i = 0, l = arr.length; i < l; i++) {
+        if (arr[i] < pivot) {
+            below.push(arr[i]);
+        } else {
+            above.push(arr[i]);
+        }
+    }
+
+    return;
+    quicksort(below).
+    map(leftArr =>
+    quicksort(above).map(rightArr =>
+    Either.Right([].concat(leftArr, pivot, rightArr))));
+
+
+}
+
+
+module.exports = quicksort;

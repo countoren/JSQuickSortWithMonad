@@ -1,0 +1,7 @@
+var Either = require('data.either');
+
+function sort(a, b) {
+	debugger;
+	Either.Right("dsfsdf").merge();
+}
+module.exports = sort;
